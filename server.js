@@ -15,7 +15,8 @@ app.use(bodyParser.json());
 app.use('/api', require('./routes/api'));
 
 // Start server
-app.listen(3000);
+var port = Number(process.env.PORT || 3000)
+app.listen(port);
 console.log('API is running on port 3000');
 
 
