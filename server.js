@@ -16,6 +16,8 @@ app.use(function (req, res, next) {
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'http://im.sites.dev');
     res.setHeader('Access-Control-Allow-Origin', 'http://jsfiddle.net');
+    res.setHeader('Access-Control-Allow-Origin', 'http://fiddle.jshell.net');
+
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
